@@ -3,31 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ExamMark — Chấm thi trắc nghiệm bằng camera điện thoại</title>
-<meta name="description" content="ExamMark: ứng dụng Android soạn đề, trộn đề, in phiếu và chấm thi trắc nghiệm bằng camera (offline); kỳ thi nhóm cho tổ bộ môn, chấm tự luận bằng AI (thử nghiệm), giao bài, chấm thi online và Soạn giảng (NLS giáo án). Tải APK và hướng dẫn sử dụng.">
+<title>ExamMark-PTC — Chấm thi, ngân hàng câu hỏi, thi online &amp; soạn giảng trên điện thoại</title>
+<meta name="description" content="ExamMark-PTC không chỉ chấm thi trắc nghiệm bằng camera: còn chấm tự luận bằng AI, quản lí ngân hàng câu hỏi khoa học và gọn nhẹ, giao bài và tổ chức thi online, cùng vô vàn công cụ soạn giáo án, tài liệu dạy học và trình chiếu trực quan lên tivi. Android (APK) và iPhone/iPad (PWA).">
 <meta name="theme-color" content="#2563eb">
 <link rel="icon" type="image/png" href="assets/img/favicon-64.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="top"><div class="wrap">
-<a class="brand" href="index.html"><img src="assets/img/logo-192.png" alt="" width="34" height="34">ExamMark</a>
-<nav class="main" aria-label="Điều hướng chính"><a href="index.html" aria-current="page">Trang chủ &amp; tải về</a><a href="gioi-thieu.html">Giới thiệu</a><a href="huong-dan.html">Hướng dẫn sử dụng</a><a href="privacy.html">Quyền riêng tư</a></nav>
+<a class="brand" href="index.html"><img src="assets/img/logo-192.png" alt="" width="34" height="34">ExamMark-PTC</a>
+<nav class="main" aria-label="Điều hướng chính"><a href="index.html" aria-current="page">Trang chủ &amp; tải về</a><a href="gioi-thieu.html">Giới thiệu</a><a href="huong-dan.html">Hướng dẫn sử dụng</a><a href="tac-gia.html">Tác giả &amp; Ủng hộ ☕</a><a href="privacy.html">Quyền riêng tư</a></nav>
 </div></header>
 <section class="hero"><div class="wrap"><div class="row">
 <div>
-<h1>ExamMark — chấm thi trắc nghiệm bằng camera điện thoại</h1>
-<p>Soạn đề, in phiếu, chụp ảnh và chấm điểm ngay trên điện thoại Android — <b>không cần mạng</b> sau khi kích hoạt (chấm bằng camera). Hỗ trợ phiếu 3 phần: trắc nghiệm nhiều lựa chọn, Đúng/Sai và trả lời ngắn. Mới: <b>ngân hàng câu hỏi &amp; trộn đề</b> (nhập thẳng đề Word, dạng toán, câu tự luận, xuất bản in/Word), <b>kỳ thi nhóm</b> cho tổ bộ môn, <b>chấm tự luận bằng AI</b> (bản thử nghiệm), <b>giao bài, chấm thi online</b> và <b>Soạn giảng</b> (tích hợp năng lực số vào giáo án, ma trận đề, vẽ hình Toán).</p>
+<span class="tagline">Bộ công cụ của giáo viên, ngay trên điện thoại</span>
+<h1>ExamMark-PTC — không chỉ là phần mềm chấm thi trắc nghiệm</h1>
+<p>Chấm trắc nghiệm bằng camera <b>offline</b>, <b>chấm tự luận bằng AI</b>, <b>quản lí ngân hàng câu hỏi</b> khoa học và gọn nhẹ, <b>giao bài và tổ chức thi online</b>, cùng <b>vô vàn công cụ</b> soạn giáo án, soạn tài liệu dạy học và <b>trình chiếu trực quan trên tivi</b> (chia sẻ thẳng từ màn hình điện thoại). Dùng được trên <b>Android (APK)</b> và <b>iPhone/iPad (bản web PWA)</b>.</p>
 <p>
 <!-- TODO: thay TEN-TAI-KHOAN/ten-repo bằng địa chỉ GitHub Releases thật của bạn -->
-<a class="btn btn-primary" href="https://github.com/TEN-TAI-KHOAN/ten-repo/releases/latest">Tải ExamMark cho Android (APK)</a>
+<a class="btn btn-primary" href="https://github.com/TEN-TAI-KHOAN/ten-repo/releases/latest">🤖 Tải cho Android (APK)</a>
+<a class="btn btn-ios" href="#iphone">🍎 Dùng trên iPhone / iPad</a>
 <a class="btn btn-ghost" href="huong-dan.html">Xem hướng dẫn</a></p>
+<p class="note">Dùng iPhone? Tệp APK <b>không cài được</b> trên iOS — hãy dùng bản web, cài lên màn hình chính chỉ trong vài chạm (xem <a href="#iphone" style="color:#fff">hướng dẫn bên dưới</a>).</p>
 </div>
-<img class="logo" src="assets/img/logo-192.png" alt="Biểu tượng ExamMark" width="150" height="150">
+<img class="logo" src="assets/img/logo-192.png" alt="Biểu tượng ExamMark-PTC" width="150" height="150">
 </div></div></section>
 <main><div class="wrap">
 
-<h2 style="margin-top:6px">Điểm nổi bật</h2>
+<div id="plat-banner" role="status" aria-live="polite"></div>
+
+<h2 style="margin-top:6px">Một ứng dụng — sáu việc lớn của giáo viên</h2>
+<div class="pillars">
+<div class="pillar"><div class="ic">📷</div><h3>Chấm trắc nghiệm bằng camera</h3><p>Phiếu 3 phần (nhiều lựa chọn, Đúng/Sai, trả lời ngắn), chấm ngay trên máy, <b>offline</b>; câu tô mơ hồ được gắn cờ để giáo viên quyết định. Hỗ trợ nhiều mã đề, mã QR cho từng thí sinh.</p></div>
+<div class="pillar"><div class="ic">🤖</div><h3>Chấm tự luận bằng AI <span class="pill">Thử nghiệm</span></h3><p>AI chép bài viết tay, chấm theo barem từng ý; giáo viên xem ảnh, sửa điểm và duyệt. Hỗ trợ nhiều nhà cung cấp AI và nhiều khoá API.</p></div>
+<div class="pillar"><div class="ic">📖</div><h3>Ngân hàng câu hỏi khoa học, gọn nhẹ</h3><p>Nạp từ Excel hoặc <b>đề Word</b> (có công thức, hình), phân loại chủ đề – dạng – mức độ, mã câu thống nhất, nhặt theo <b>ma trận</b>, trộn thành nhiều mã đề, xuất Word/PDF, sao lưu cả ngân hàng.</p></div>
+<div class="pillar"><div class="ic">🌐</div><h3>Giao bài &amp; tổ chức thi online <span class="pill">Mới</span></h3><p>Học sinh làm bài trên trình duyệt (không cần tài khoản), chấm tự động, theo dõi trực tiếp, nhận xét và gửi kết quả qua email; dữ liệu nằm trong Google của chính giáo viên.</p></div>
+<div class="pillar"><div class="ic">📘</div><h3>Soạn giáo án &amp; tài liệu dạy học <span class="pill">Mới</span></h3><p><b>Vô vàn công cụ</b>: giáo án tích hợp năng lực số, kế hoạch dạy học, phiếu học tập, bài giảng, sơ đồ tư duy, đề biến thể, ma trận đề; vẽ đồ thị, tập hợp, hình không gian; công cụ Lý – Hóa – Sinh.</p></div>
+<div class="pillar"><div class="ic">📺</div><h3>Trình chiếu trực quan trên tivi <span class="pill">Mới</span></h3><p><b>Chia sẻ trực tiếp màn hình điện thoại</b> lên tivi/máy chiếu: có <b>chế độ tivi</b> gọn nút, phóng to một khung, toàn màn hình khi vẽ hình, chỉnh cỡ chữ và giao diện sáng/tối để cả lớp nhìn rõ.</p></div>
+</div>
+
+<h2>Điểm nổi bật</h2>
 <div class="grid">
 <div class="card"><div class="ic">📴</div><h3>Chấm offline</h3><p>Quét và chấm hoàn toàn trên máy. Chỉ lần kích hoạt bản quyền (và làm mới định kỳ) mới cần Internet.</p></div>
 <div class="card"><div class="ic">🖨️</div><h3>Tạo và in phiếu</h3><p>Sinh phiếu A4 hoặc A5, dọc hoặc ngang, tuỳ số câu từng phần; xuất PDF để in, kể cả phiếu có mã QR cho từng thí sinh.</p></div>
@@ -41,30 +56,90 @@
 <div class="card"><div class="ic">🌙</div><h3>Giao diện sáng/tối <span class="pill">Mới</span></h3><p>Sáng, Tối, Đen (OLED), Giấy ấm; chỉnh cỡ chữ, phóng to khung và bố cục gọn khi chiếu lên tivi.</p></div>
 </div>
 
-<h2>Tải về và cài đặt</h2>
-<p class="lead">ExamMark được phát hành dưới dạng tệp cài đặt <code>.apk</code> <b>ngoài Google Play</b>. Cách cài như sau:</p>
+<h2 id="tai-ve">Tải về và cài đặt</h2>
+<p class="lead">Chọn đúng cách cho điện thoại của bạn. Cả hai đều dùng chung mã kích hoạt/license.</p>
+<div class="dev">
+<div class="card" id="card-android"><div class="ic">🤖</div><h3>Android <span class="pill">Ứng dụng APK</span></h3><p>Cài tệp <code>.apk</code> như một ứng dụng thường, đầy đủ chức năng, chạy offline sau khi kích hoạt.</p><p><a class="btn btn-solid" href="#android">Xem cách cài APK</a></p></div>
+<div class="card" id="card-ios"><div class="ic">🍎</div><h3>iPhone / iPad <span class="pill">Bản web (PWA)</span></h3><p>Apple không cho cài APK, nên ExamMark-PTC có <b>bản web</b>: mở bằng Safari rồi <i>Thêm vào Màn hình chính</i> — biểu tượng và cách dùng như ứng dụng, không cần App Store.</p><p><a class="btn btn-solid" href="#iphone">Xem cách cài trên iPhone</a></p></div>
+</div>
+
+<h3 id="android">🤖 Cài trên Android (APK)</h3>
+<p class="lead">Trên Android, ExamMark-PTC được phát hành dưới dạng tệp cài đặt <code>.apk</code> <b>ngoài Google Play</b>. Cách cài như sau:</p>
 <ol class="steps">
-<li><b>Tải tệp APK</b> bằng nút “Tải ExamMark cho Android” ở đầu trang (mở trên chính điện thoại Android của bạn).</li>
+<li><b>Tải tệp APK</b> bằng nút “Tải ExamMark-PTC cho Android” ở đầu trang (mở trên chính điện thoại Android của bạn).</li>
 <li><b>Cho phép cài từ nguồn này.</b> Khi mở tệp, Android sẽ hỏi quyền “Cài đặt ứng dụng không rõ nguồn” cho trình duyệt hoặc ứng dụng Tệp bạn đang dùng — bật cho lần cài này. Nếu Google Play Protect hiện cảnh báo vì ứng dụng không tải từ cửa hàng, chọn “Vẫn cài đặt” khi bạn tin tưởng nguồn tải.</li>
-<li><b>Mở ExamMark</b> và làm theo màn hình <span class="ui">Kích hoạt ExamMark</span>: chọn dùng thử miễn phí (nếu đang mở) hoặc nhập mã license dạng <code>EXM-XXXX-XXXX-XXXX</code>. Lần kích hoạt đầu tiên cần Internet.</li>
+<li><b>Mở ExamMark-PTC</b> và làm theo màn hình <span class="ui">Kích hoạt ExamMark-PTC</span>: chọn dùng thử miễn phí (nếu đang mở) hoặc nhập mã license dạng <code>EXM-XXXX-XXXX-XXXX</code>. Lần kích hoạt đầu tiên cần Internet.</li>
 </ol>
 <div class="callout"><b class="t">Yêu cầu</b><p>Điện thoại Android 8.0 trở lên (khuyến nghị), có camera, còn khoảng vài trăm MB trống. Cần Internet cho lần kích hoạt đầu tiên và khi app làm mới license.</p></div>
-<div class="callout tip"><b class="t">Kiểm tra tệp tải về có nguyên vẹn không</b><p>Trên trang phát hành (GitHub Releases) có kèm mã <b>SHA-256</b> của tệp APK. Trên Windows, mở Command Prompt tại thư mục chứa tệp và chạy <code>certutil -hashfile ExamMark.apk SHA256</code>, rồi so với mã công bố. Hai mã giống nhau nghĩa là tệp không bị sửa đổi.</p></div>
-<div class="callout warn"><b class="t">Về cảnh báo bảo mật</b><p>Vì không đăng trên Google Play nên Android có thể cảnh báo khi cài. Hãy chỉ tải ExamMark từ trang này hoặc từ trang phát hành do tác giả cung cấp, không cài từ tệp do người lạ gửi.</p></div>
+<div class="callout tip"><b class="t">Kiểm tra tệp tải về có nguyên vẹn không</b><p>Trên trang phát hành (GitHub Releases) có kèm mã <b>SHA-256</b> của tệp APK. Trên Windows, mở Command Prompt tại thư mục chứa tệp và chạy <code>certutil -hashfile ExamMark-PTC.apk SHA256</code>, rồi so với mã công bố. Hai mã giống nhau nghĩa là tệp không bị sửa đổi.</p></div>
+<div class="callout warn"><b class="t">Về cảnh báo bảo mật</b><p>Vì không đăng trên Google Play nên Android có thể cảnh báo khi cài. Hãy chỉ tải ExamMark-PTC từ trang này hoặc từ trang phát hành do tác giả cung cấp, không cài từ tệp do người lạ gửi.</p></div>
 
-<h2>Đi tiếp</h2>
-<div class="grid">
-<a class="card" href="gioi-thieu.html" style="text-decoration:none;color:inherit"><h3>Giới thiệu &rarr;</h3><p>ExamMark là gì, dành cho ai, vai trò và các chức năng chính.</p></a>
-<a class="card" href="huong-dan.html" style="text-decoration:none;color:inherit"><h3>Hướng dẫn sử dụng &rarr;</h3><p>Từng bước: tạo phiếu, tạo kỳ thi, ngân hàng câu hỏi, trộn đề, chấm bằng camera, kỳ thi nhóm, chấm tự luận, giao bài online, xuất kết quả.</p></a>
-<a class="card" href="privacy.html" style="text-decoration:none;color:inherit"><h3>Quyền riêng tư &rarr;</h3><p>Ứng dụng xử lý dữ liệu gì, lưu ở đâu và bạn kiểm soát thế nào.</p></a>
-</div>
+<h2 id="iphone">🍎 Dùng ExamMark-PTC trên iPhone / iPad (bản web PWA)</h2>
+<p class="lead">Bản iPhone là <b>chính ứng dụng web</b> (cùng mã với bản APK), đặt trên một địa chỉ riêng. Bạn <b>không cần App Store</b>, không cần tệp APK: mở một lần bằng <b>Safari</b> rồi thêm biểu tượng ra màn hình chính.</p>
+<div class="callout"><b class="t">Trước khi bắt đầu</b><p>Cần Internet cho lần đầu (app tải khoảng <b>17 MB</b>, nên để có mạng khoảng 1–2 phút), dùng <b>Safari</b>. Nếu bạn mở trang này trong Zalo, Facebook hay Messenger, hãy chạm <b>⋯</b> (hoặc biểu tượng la bàn) rồi chọn <b>Mở bằng Safari</b> trước — trình duyệt nhúng không cài được app.</p></div>
+<p style="margin:18px 0 6px"><!-- TODO: đổi TEN-DU-AN.pages.dev thành địa chỉ bản PWA thật (ví dụ trên Cloudflare Pages) --><a class="btn btn-solid" href="https://TEN-DU-AN.pages.dev/" id="pwa-open">🍎 Mở bản web ExamMark-PTC (PWA)</a></p>
+<h3>Cài lên màn hình chính — 4 bước</h3>
+<ol class="steps">
+<li><b>Mở bản web bằng Safari</b> bằng nút ở trên và chờ trang tải xong.</li>
+<li><b>Chạm nút Chia sẻ</b> <span class="sharekey">⬆︎</span> (ô vuông có mũi tên hướng lên) ở <b>thanh dưới</b> (iPhone) hoặc <b>thanh trên</b> (iPad).</li>
+<li><b>Chọn</b> <span class="ui">Thêm vào Màn hình chính</span> rồi chạm <span class="ui">Thêm</span>. Không thấy mục này thì cuộn xuống cuối danh sách và kiểm tra bạn đang dùng Safari.</li>
+<li><b>Mở ExamMark-PTC bằng biểu tượng mới</b> ngoài màn hình chính, <b>rồi mới</b> kích hoạt license và nhập dữ liệu (làm theo <a href="huong-dan.html#cai-dat">mục 1</a>). Lần đầu chờ đến khi app báo <b>“✅ Đã sẵn sàng dùng offline”</b>; từ đó mở được cả khi không có mạng.</li>
+</ol>
+<div class="callout warn"><b class="t">⚠ Safari và app trên Màn hình chính là hai “kho dữ liệu” riêng</b><p>Dữ liệu bạn nhập khi đang mở bằng Safari <b>sẽ không chuyển sang</b> app đã thêm ra màn hình chính. Vì vậy hãy <b>kích hoạt và nhập mọi thứ trong app đã cài</b>, đừng dùng lẫn hai nơi.</p></div>
+<div class="callout warn"><b class="t">Sao lưu thường xuyên</b><p>Dữ liệu (kỳ thi, danh sách học sinh, kết quả) nằm trong bộ nhớ của app web trên máy. iPhone vẫn có thể xoá dữ liệu web khi máy thiếu dung lượng; xoá “Dữ liệu trang web” của Safari hoặc gỡ biểu tượng cũng làm mất dữ liệu chưa sao lưu. Hãy <b>xuất Excel/CSV</b> và dùng <a href="huong-dan.html#drive">sao lưu Google Drive</a>. Mã thiết bị của app web là số ngẫu nhiên lưu trong trình duyệt: nếu dữ liệu bị xoá, máy sẽ được tính là <b>thiết bị mới</b> trong license (hãy liên hệ tác giả/quản trị để dùng lại chỗ).</p></div>
+<h3>Mẹo dùng trên iPhone</h3>
+<ul>
+<li><b>Xuất Excel/PDF/Word:</b> app hiện bảng <span class="ui">📤 Tệp đã sẵn sàng</span> → chạm <span class="ui">Chia sẻ / Lưu vào Tệp…</span> (hoặc AirDrop, Zalo, Email). Đây là cách tải tệp của iOS.</li>
+<li><b>Chấm bài bằng camera:</b> iPhone mở camera hệ thống để <b>chụp từng ảnh phiếu</b> rồi app nhận dạng. Hãy cho phép camera khi được hỏi; ảnh từ 12 MP trở lên có thể chậm hoặc tốn bộ nhớ trên máy cũ.</li>
+<li><b>Đăng nhập Google</b> trong app trên màn hình chính đôi khi không mở được cửa sổ đăng nhập: khi đó dùng <b>mã OTP gửi qua email</b> để kích hoạt và sao lưu bằng tệp.</li>
+<li><b>Cập nhật:</b> khi có bản mới app hiện thông báo <span class="ui">Có bản mới</span>, bạn bấm <span class="ui">Cập nhật</span> là xong, dữ liệu được giữ nguyên.</li>
+</ul>
+<div class="callout"><b class="t">Dùng trên máy tính (Windows / macOS / Linux)</b><p>Mở cùng địa chỉ bản web bằng <b>Chrome/Edge</b> rồi bấm biểu tượng cài đặt ở thanh địa chỉ (hoặc banner “Cài ExamMark-PTC”) để mở thành cửa sổ riêng; Safari trên Mac (17+): <i>Chia sẻ → Thêm vào Dock</i>. Firefox máy tính không cài được thành app (vẫn dùng như trang web). Mỗi trình duyệt/hồ sơ là một kho dữ liệu riêng và chiếm một chỗ thiết bị của license.</p></div>
+<h3>Android (APK) và iPhone (bản web) khác nhau thế nào?</h3>
+<table class="tbl"><tr><th></th><th>🤖 Android (APK)</th><th>🍎 iPhone / iPad (PWA)</th></tr>
+<tr><td><b>Cách cài</b></td><td>Tải và cài tệp APK</td><td>Safari → Chia sẻ → Thêm vào Màn hình chính</td></tr>
+<tr><td><b>Lưu dữ liệu</b></td><td>Cơ sở dữ liệu SQLite của ứng dụng</td><td>Bộ nhớ trình duyệt (IndexedDB); nhớ sao lưu</td></tr>
+<tr><td><b>Lưu / tải tệp xuất</b></td><td>Thư mục <i>Tài liệu/ExamMark-PTC</i></td><td>Bảng chia sẻ của iOS (Lưu vào Tệp, AirDrop…)</td></tr>
+<tr><td><b>Mã thiết bị</b></td><td>Lấy từ thiết bị</td><td>Số ngẫu nhiên trong trình duyệt; xoá dữ liệu ⇒ thiết bị mới</td></tr>
+<tr><td><b>Cập nhật</b></td><td>Tải APK mới và cài đè</td><td>Tự động qua đường dẫn; bấm “Cập nhật”</td></tr>
+<tr><td><b>Mã kích hoạt</b></td><td colspan="2">Dùng chung license <code>EXM-XXXX-XXXX-XXXX</code>, kích hoạt dùng thử, OTP email hoặc đăng nhập Google như nhau</td></tr>
+</table>
+<div class="callout warn"><b class="t">Hãy thử trước khi dùng thật</b><p>Bản iPhone <b>chưa được kiểm thử trên iPhone thật</b> ở các phần: cài vào màn hình chính và dùng offline, sao lưu/khôi phục, chụp phiếu bằng camera, đăng nhập Google trong chế độ app, bảng chia sẻ tệp. Hãy chấm thử vài phiếu và xuất thử một tệp trước khi dùng cho kỳ thi quan trọng; nếu vướng, gửi email kèm <b>ảnh chụp màn hình</b> và <b>phiên bản iOS</b> cho tác giả.</p></div>
+
+<h2>☕ Ủng hộ tác giả một ly cà phê</h2>
+<div class="card" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><div class="ic" style="font-size:40px">☕</div><div style="flex:1 1 300px"><p style="margin:0;color:var(--ink)">ExamMark-PTC được làm ra trong những buổi tối thức khuya, với rất nhiều ly cà phê. Nếu app giúp bạn đỡ ngồi chấm bài đến khuya, mời tác giả một ly nước để có thêm sức “nâng cấp” nhé.</p></div><a class="btn btn-solid" href="tac-gia.html#ung-ho">Xem đội ngũ &amp; ủng hộ</a></div>
+
 <h2>Liên hệ và hỗ trợ</h2>
 <p>Nhà phát triển: <b>Phan Thế Chiến</b> — email <a href="mailto:phanchienmdc@gmail.com">phanchienmdc@gmail.com</a> (Điện thoại/Zalo: 098 908 1315). Khi báo lỗi, vui lòng gửi kèm <b>ảnh chụp đầy đủ màn hình</b> và nội dung thông báo lỗi nguyên văn để được hỗ trợ nhanh hơn. Muốn cấp mã license (dùng cá nhân hoặc cho trường/tổ bộ môn), hãy liên hệ qua email trên.</p>
 
 </div></main>
 <footer class="bot"><div class="wrap">
-<div>© 2026 Phan Thế Chiến. ExamMark là công cụ hỗ trợ chấm thi trắc nghiệm; kết quả cần được giáo viên kiểm tra.</div>
-<div>Liên hệ: <a href="mailto:phanchienmdc@gmail.com">phanchienmdc@gmail.com</a> · <a href="privacy.html">Chính sách quyền riêng tư</a> . (Điện thoại/Zalo: 098 908 1315)</div>
+<div>© 2026 Phan Thế Chiến. ExamMark-PTC là công cụ hỗ trợ giáo viên (chấm thi, ngân hàng câu hỏi, thi online, soạn giảng); kết quả chấm cần được giáo viên kiểm tra.</div>
+<div>Liên hệ: <a href="mailto:phanchienmdc@gmail.com">phanchienmdc@gmail.com</a> · <a href="tac-gia.html">Tác giả &amp; Ủng hộ</a> · <a href="privacy.html">Chính sách quyền riêng tư</a> . (Điện thoại/Zalo: 098 908 1315)</div>
 </div></footer>
+<script>
+(function(){
+var b=document.getElementById('plat-banner');if(!b)return;
+try{
+var ua=navigator.userAgent||'';
+var ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+var android=/Android/i.test(ua);
+var standalone=window.navigator.standalone===true||(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches);
+var inapp=/Zalo|FBAN|FBAV|FB_IAB|Instagram|Line\/|Messenger/i.test(ua);
+var safari=/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|OPiOS|GSA|DuckDuckGo/.test(ua)&&!inapp;
+function show(cls,html){b.className='show '+cls;b.innerHTML=html;}
+if(ios){
+ var c=document.getElementById('card-ios');if(c)c.classList.add('you');
+ if(standalone){return;}
+ if(inapp){show('warn','<b class="t">⚠️ Bạn đang mở trong trình duyệt của ứng dụng khác</b>Hãy chạm <b>⋯</b> (hoặc biểu tượng la bàn) rồi chọn <b>Mở bằng Safari</b>, sau đó làm theo <a href="#iphone">hướng dẫn cài cho iPhone</a>. Trình duyệt nhúng không có mục “Thêm vào Màn hình chính”.');}
+ else if(!safari){show('ios','<b class="t">🍎 Bạn đang dùng iPhone/iPad</b>Tệp APK không cài được trên iOS. Bạn dùng <a href="#iphone">bản web (PWA)</a> — nên mở bằng <b>Safari</b> cho chắc ăn rồi chọn <i>Thêm vào Màn hình chính</i>.');}
+ else{show('ios','<b class="t">🍎 Bạn đang dùng iPhone/iPad</b>Tệp APK <b>không cài được</b> trên iOS. Hãy dùng <a href="#iphone">bản web (PWA)</a>: mở <a href="https://TEN-DU-AN.pages.dev/">ExamMark-PTC web</a> → nút Chia sẻ → <i>Thêm vào Màn hình chính</i>. Chỉ mất chưa đến 1 phút.');}
+}else if(android){
+ var a=document.getElementById('card-android');if(a)a.classList.add('you');
+ show('android','<b class="t">🤖 Bạn đang dùng Android</b>Hãy <a href="#android">tải và cài tệp APK</a> để có đầy đủ chức năng. Nếu muốn, bạn vẫn có thể thử <a href="https://TEN-DU-AN.pages.dev/">bản web</a>.');
+}
+}catch(e){}
+})();
+</script>
 </body>
 </html>
